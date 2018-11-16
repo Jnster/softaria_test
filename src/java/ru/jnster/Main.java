@@ -11,10 +11,8 @@ import java.util.Scanner;
 public class Main
 {
     public static void main(String[] args) {
-        String textEmail, addresser, addressee, host, password, subjectEmail = "Результат Климова Антона jnster@yandex.ru";
-        int port;
+        String textEmail, addresser, addressee, host, password, subjectEmail = "Результат Климова Антона.";
         SiteMapComparator siteMapComparator;
-        List<URL> result;
         EmailSender emailSender;
         Map<URL, String> yesterday = new HashMap<>(), today = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
