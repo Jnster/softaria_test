@@ -1,10 +1,8 @@
 package ru.jnster;
 
 import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -32,7 +30,7 @@ public class Main
 
             //Выполнение задания
             siteMapComparator = new SiteMapComparator(yesterday,today);
-            textEmail = FormatterEmailText.formating(siteMapComparator.changed(),siteMapComparator.removed(),siteMapComparator.created());
+            textEmail = AFormatterEmailText.formating(siteMapComparator.changed(),siteMapComparator.removed(),siteMapComparator.created());
 
             System.out.print("Введите адрес электронной почты отправителя: ");
             addresser = scanner.next();
